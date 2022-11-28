@@ -7,37 +7,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_margin="15dp"
         >
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Staff Registration"
+            android:text="WeFix Staff SignUp"
             android:layout_marginLeft="20dp"
             android:textSize="30sp"
             android:textColor="@color/design_default_color_primary"
-            android:fontFamily="sans-serif-condensed"/>
-        <EditText
-            android:id="@+id/edit_text_user_staff_sign_up_staff_id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Customer Id"
-            android:layout_margin="10dp"
-            android:textSize="18sp"
-            android:background="@color/white"
-            />
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/text_input_layout_staff_sign_up_department"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <EditText
-                android:id="@+id/edit_text_staff_sign_up_department"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Department"
-                android:layout_margin="10dp"
-                android:textSize="18sp"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
+            android:fontFamily="sans-serif-condensed"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"/>
+
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/text_input_layout_staff_sign_up_email_address"
             android:layout_width="match_parent"
@@ -49,40 +33,26 @@
                 android:hint="Email Address"
                 android:layout_margin="10dp"
                 android:textSize="18sp"
+                android:background="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
 
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/text_input_layout_staff_sign_up_surname"
+            android:id="@+id/text_input_layout_staff_sign_up_full_name"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <EditText
-                android:id="@+id/edit_text_staff_sign_up_surname"
+                android:id="@+id/edit_text_staff_sign_up_full_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Surname"
+                android:hint="Fullname"
                 android:layout_margin="10dp"
                 android:textSize="18sp"
-                />
-
-
+                android:background="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
         </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/text_input_layout_staff_sign_up_first_name"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <EditText
-                android:id="@+id/edit_text_staff_sign_up_first_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="First name"
-                android:layout_margin="10dp"
-                android:textSize="18sp"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
-
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -96,6 +66,8 @@
                 android:hint="Phone number"
                 android:layout_margin="10dp"
                 android:textSize="18sp"
+                android:background="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -111,70 +83,47 @@
                 android:inputType="date"
                 android:layout_margin="10dp"
                 android:textSize="18sp"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/text_input_layout_staff_sign_up_post_code"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <EditText
-                android:id="@+id/edit_text_staff_sign_up_post_code"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Post Code"
-                android:layout_margin="10dp"
-                android:textSize="18sp"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/text_input_layout_staff_sign_up_street_address"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <EditText
-                android:id="@+id/edit_text_staff_sign_up_street_address"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Street Address"
-                android:layout_margin="10dp"
-                android:textSize="18sp"
-                />
+                android:background="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/text_input_layout_staff_sign_up_city"
+            android:id="@+id/text_input_layout_staff_sign_up_create_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <EditText
-                android:id="@+id/edit_text_user_sign_up_city"
+                android:id="@+id/edit_text_staff_sign_up_create_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="City"
+                android:hint="Create Password"
                 android:layout_margin="10dp"
                 android:textSize="18sp"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/text_input_layout_staff_sign_up_country"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <EditText
-                android:id="@+id/edit_text_staff_sign_up_country"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Country"
-                android:layout_margin="10dp"
-                android:textSize="18sp"
-                />
+                android:background="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_staff_sign_up_job_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/edit_text_staff_sign_up_create_job_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select job type"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:background="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/button_staff_sign_up"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="signup"
             android:text="sign up"
             android:layout_gravity="center"
-            android:layout_margin="10dp"/>
+            android:layout_margin="20dp"/>
     </LinearLayout>
 </ScrollView>
